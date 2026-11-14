@@ -1,0 +1,27 @@
+package edu.zuj.oop.week5.lecture1;
+
+public class Car {
+
+    String type;
+    int year;
+
+    public void turnOn() {
+        System.out.println("Turning on car: " + type + " with model " + year);
+    }
+
+    public void turnOff() {
+        System.out.println("Turning off car: " + type + " with model " + year);
+    }
+
+    public void stop() {
+        System.out.println("Stopping car: " + type + " with model " + year);
+    }
+
+    public void moveForward() {
+        System.out.println("Move car: " + type + " with model " + year + " forward");
+    }
+
+    public void moveBackward() {
+        System.out.println("Move car: " + type + " with model " + year + " backward");
+    }
+}
