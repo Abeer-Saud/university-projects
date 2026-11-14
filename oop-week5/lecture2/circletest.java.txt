@@ -1,0 +1,23 @@
+package edu.zuj.oop.week5.lecture2;
+
+public class CircleTest {
+
+    public static void main(String[] args) {
+
+        Circle c1 = new Circle();
+
+        // c1.rad = 5;
+
+        c1.setRad(5);
+
+        c1.getArea();
+        c1.getRound();
+
+        System.out.println(c1);
+
+        Circle c2 = new Circle(7);
+
+        c2.getArea();
+        c2.getRound();
+    }
+}
