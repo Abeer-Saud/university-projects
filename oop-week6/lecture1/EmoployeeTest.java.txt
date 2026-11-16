@@ -1,0 +1,41 @@
+package edu.zuj.oop.week6.lecture1;
+
+import java.util.Scanner;
+
+public class EmployeeTest {
+
+    public static void main(String[] args) {
+
+        Employee e1 = new Employee(10, "Ata", 500, 100, 75);
+
+        System.out.println(e1);
+        System.out.println(e1.calculateTotalSalary());
+
+        Employee e2 = new Employee(20, "Jamal", 700, 150, 200);
+
+        System.out.println(e2);
+        System.out.println(e2.calculateTotalSalary());
+
+        Scanner s = new Scanner(System.in);
+
+        Employee e3 = new Employee();
+
+        System.out.print("Enter id: ");
+        e3.setId(s.nextInt());
+
+        System.out.print("Enter name: ");
+        e3.setName(s.next());
+
+        System.out.print("Enter basic: ");
+        e3.setBasic(s.nextInt());
+
+        System.out.print("Enter allowances: ");
+        e3.setAllowances(s.nextInt());
+
+        System.out.print("Enter deductions: ");
+        e3.setDeductions(s.nextInt());
+
+        System.out.println(e3);
+        System.out.println(e3.calculateTotalSalary());
+    }
+}

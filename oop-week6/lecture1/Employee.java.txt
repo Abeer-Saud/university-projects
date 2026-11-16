@@ -1,0 +1,85 @@
+package edu.zuj.oop.week6.lecture1;
+
+public class Employee {
+
+    private int id;
+    private String name;
+    private int basic;
+    private int deductions;
+    private int allowances;
+
+    // Default Constructor
+    public Employee() {
+    }
+
+    // Parameterized Constructor
+    public Employee(int id, String name, int basic,
+                    int deductions, int allowances) {
+
+        this.id = id;
+        this.name = name;
+        this.basic = basic;
+        this.deductions = deductions;
+        this.allowances = allowances;
+    }
+
+    // Calculate Total Salary
+    public int calculateTotalSalary() {
+        int total = basic - deductions + allowances;
+        return total;
+    }
+
+    // Getters and Setters
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getBasic() {
+        return basic;
+    }
+
+    public void setBasic(int basic) {
+        this.basic = basic;
+    }
+
+    public int getDeductions() {
+        return deductions;
+    }
+
+    public void setDeductions(int deductions) {
+        this.deductions = deductions;
+    }
+
+    public int getAllowances() {
+        return allowances;
+    }
+
+    public void setAllowances(int allowances) {
+        this.allowances = allowances;
+    }
+
+    // toString
+    @Override
+    public String toString() {
+        return "Employee{" +
+                "id=" + id +
+                ", name=" + name +
+                ", basic=" + basic +
+                ", deductions=" + deductions +
+                ", allowances=" + allowances +
+                '}';
+    }
+}
